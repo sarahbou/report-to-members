@@ -1,0 +1,201 @@
+/* LESS Document */
+
+@font-face {
+	font-family: 'Bebas Neue';
+	font-weight: bold;
+	src: url("fonts/BebasNeueBold.ttf");
+}
+
+@font-face {
+	font-family: 'Bebas Neue';
+	font-weight: normal;
+	src: url("fonts/bebas-neue.ttf");
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	font-weight: normal;
+	font-style: normal;
+	src: url("fonts/ProximaNova-Light.otf");
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	font-weight: normal;
+	font-style: italic;
+	src: url("fonts/ProximaNova-LightIt.otf");
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	font-weight: bold;
+	font-style: normal;
+	src: url("fonts/ProximaNova-Bold.otf");
+}
+
+i {
+	font-family: 'Proxima Nova';
+	font-weight:normal;
+	font-style: italic;
+}
+
+b, strong {
+	font-family: 'Proxima Nova';
+	font-style: normal;
+	font-weight: bold;
+}
+
+
+body {
+	color: #000;
+	font-family: 'Proxima Nova';
+	font-weight: normal;
+	font-size: 15px;
+	font-style: normal;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+}
+
+p {
+	margin: 0;
+	line-height: 1.4em;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+p a {
+	border-bottom: 2px solid @achieved;
+	padding-bottom: 3px;
+	transition: border-bottom-color 0.2s ease-in-out;
+	-moz-transition: border-bottom-c 0.2s ease-in-out;
+	-o-transition: border-bottom-color 0.2s ease-in-out;
+	-webkit-transition: border-bottom-color 0.2s ease-in-out;
+	
+	&:hover {
+		border-bottom-color: @primary;
+	}
+}
+
+h1, h2, h3 {
+	font-family: 'Bebas Neue';
+	margin: 0;
+	font-weight: bold;
+	line-height: 1em;
+}
+
+h1 {
+	font-size: 70px;
+	
+	@media (min-width: 768px){
+		font-size: 105px;
+	}
+}
+ 
+h2 {
+	font-size: 38px;
+	
+	@media (min-width: 768px){
+		font-size: 57px;
+	}
+}
+
+h3 {
+	font-size: 28px;
+	
+	@media (min-width: 768px){
+		font-size: 35px;
+	}
+} 
+
+h4 {
+	font-family: 'Proxima Nova';
+	font-size: 25px;
+	font-weight: normal;
+	line-height: 1.2em;
+	margin: 0;
+	
+	@media (min-width: 768px){
+		font-size: 52px;
+	}
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+}
+
+.feature-text {
+	font-size: 24px;
+	
+	@media (min-width: 768px){
+		font-size: 37px;
+	}
+}
+
+.inner { 
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 15px;
+	
+	@media (min-width 768px) {
+		padding: 0;
+	}
+}
+
+.btn {
+	background: @primary;
+	border: 2px solid @primary;
+	display: inline-block;
+	transition: background 0.2s ease-in-out;
+    -moz-transition: background 0.2s ease-in-out;
+    -o-transition: background 0.2s ease-in-out;
+    -webkit-transition: background 0.2s ease-in-out;
+	
+	a {
+		display: block;
+		font-family: 'Bebas Neue';
+		font-size: 24px;
+		padding: 10px 25px;
+		text-transform: uppercase;
+		transition: color 0.2s ease-in-out;
+		-moz-transition: color 0.2s ease-in-out;
+		-o-transition: color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out;
+	}
+	
+	&:hover {
+		background: transparent;
+	}
+}
+
+.caption {
+	font-style: italic;
+	font-size: 16px;
+	margin: 20px auto 0 auto;
+}
+
+.disclaimer {
+	font-style: italic;
+	font-size: 16px;
+	line-height: 32px;
+	margin-top: 65px;
+	
+	a {
+		font-style: normal;
+		
+		&:hover {
+			color: @primary;
+		}
+	}
+}
+
+
+ 
